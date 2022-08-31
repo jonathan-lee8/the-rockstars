@@ -2,3 +2,25 @@ html {
     background-color: rgba(0, 0, 0, 0.747);
   }
   
+  header {
+    margin: 25px;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: azure;
+  }
+
+  #events{
+    margin: 30px;
+    text-align:center;
+    font-weight: 600;
+    color: azure;
+    background-color: black;
+  }
+
+  .table{
+    text-align: center;
+    background-color: black;
+    color: azure;
+  }

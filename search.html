@@ -9,27 +9,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./search.css">
 <body>
-    <header class="hero">
-        <h1> Artist Locator!</h1>
-    </header>
-    <!-- //search columnn//  -->
+  <header>The Artist Locator</header>
+     <!-- //search columnn//  -->
   <div class="columns">
-    <div id="search-bar" class="column is-three-fifths is-offset-one-fifth">
+    <div id="search-bar" class="column is-one-third">
       <div class="field has-addons">
       <input class="input is-rounded is-focused" type="text" placeholder="Search Artist Name..." id="search-bar">
         <button class="button is-rounded is-responsive is-info">Search</button>
       </input>
     </div>
     <!-- //artist results container// -->
-    <table class="table">
+    <div>
+    <table class="table column is-12">
         <thead>
           <tr>
             <th>Artist Results</th>
-            <th><abbr title="Top Songs">Top Songs</abbr></th>
-            <th><abbr title="Discography">Discography</abbr></th>
+            <tbody>
+                <td><abbr title="Top Songs">Top Songs</abbr></td>
+                <td><abbr title="Discography">Discography</abbr></td>
+            </tbody>
         </div>
     </div>
-    <div class="box">
+</div>
+    <div class="box column is-12" id="events">
         Upcoming Artist Events
     </div>
 </body>
