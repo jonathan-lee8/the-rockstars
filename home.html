@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Locator | Rockstars</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./home.css">
+</head>
+
+<body>
+  <header>The Artist Locator</header>
+  <div class="columns">
+    <div id="nav-bar" class="column">
+      <ul class="column">
+        <li>
+          <!-- <a href="#">Home</a> -->
+          <a href="#">Spotify</a>
+          <a href="#">Ticket Master</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="columns">
+    <div id="pic-carousel" class="column">
+            <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <figure class="image is-2by1">
+
+        <div class="mySlides fade">
+          <img src="./images/Illustrated-album-covers.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/jack.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/Justin_Bieber_Changes.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/post.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/The_1975.png" style="width:100%">
+        </div>
+
+      <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="columns">
+    <div id="search-bar" class="column is-three-fifths is-offset-one-fifth">
+      <div class="field has-addons">
+      <input class="input is-rounded is-focused" type="text" placeholder="Search Artist Name..." id="search-bar">
+        <button class="button is-rounded is-responsive is-info">Search</button>
+      </input>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<script src="./home.js"></script>
+</html>
