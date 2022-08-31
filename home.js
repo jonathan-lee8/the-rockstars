@@ -12,3 +12,27 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+/*Andre M. TODO: Through Javascript get the button 
+in Homepage to work and take to the results page
+
+var searchFormEl = document.querySelector('#search-bar');
+
+function handleSearchFormSubmit(event) {
+  event.preventDefault();
+
+  var searchInputVal = document.querySelector('#search-bar').value;
+ // var formatInputVal = document.querySelector('#format-input').value;
+
+  if (!searchInputVal) {
+    console.error('You need a search input value!');
+    return;
+  }
+
+  var queryString = './search-results.html?q=' + searchInputVal; //+ '&format=' + formatInputVal;
+
+  location.assign(queryString);
+}
+
+searchFormEl.addEventListener('submit', handleSearchFormSubmit);
+*/
