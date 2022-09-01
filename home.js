@@ -12,3 +12,21 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+
+function handleSearchFormSubmit(event) {
+  event.preventDefault();
+
+//  Code to get values
+var searchInputVal = document.querySelector('#search-bar').value;
+ 
+  if (!searchInputVal) {
+    console.error('You need a search input value!');
+    return; }
+
+  var queryString = './search.html?q=' + searchInputVal
+
+  location.assign(queryString);
+}
+
+searchFormEl.addEventListener('submit', handleSearchFormSubmit);
