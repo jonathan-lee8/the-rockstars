@@ -3,6 +3,7 @@ var searchInput = document.querySelector("#search-bar");
 var searchBtn = document.querySelector("#searchbtn");
 
 let slideIndex = 0;
+
 var searchInputVal;
 
 // showSlides();
@@ -112,3 +113,4 @@ trackArr.forEach(function(track) {
 //       }
 //   });
 // };
+

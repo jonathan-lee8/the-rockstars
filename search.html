@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artist Locator | Rockstars</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Locator | Rockstars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="./search.css">
+
 <body>
-    <header class="hero">
-        <h1> Artist Locator!</h1>
-    </header>
-    <!-- //search columnn//  -->
+
+  <header>The Artist Locator</header>
+  <!-- //search columnn//  -->
   <div class="columns">
-    <div class="column is-three-fifths is-offset-one-fifth">
+    <div id="search-bar" class="column is-one-quarter">
       <div class="field has-addons">
-      <input class="input is-rounded is-focused" type="text" placeholder="Search Artist Name..." id="search-bar">
-        <button id = "searchbtn" class="button is-rounded is-responsive is-info">Search</button>
-      </input>
-    </div>
-    <!-- //artist results container// -->
-    <table class="table">
+        <input class="input is-rounded is-focused" type="text" placeholder="Search Artist Name..." id="search-bar">
+        <button id="searchbtn" class="button is-rounded is-responsive is-info">Search</button>
+        </input>
+      </div>
+      <!-- //artist results container// -->
+      <table class="table">
         <thead>
           <tr>
             <th>Artist Results</th>
             <th><abbr title="Top Songs">Top Songs</abbr></th>
             <th><abbr title="Discography">Discography</abbr></th>
-        </div>
+          </tr>
+        </thead>
+      </table>
     </div>
-    <div class="ticketmaster">
-        <h3>Upcoming Artist Events</h3>
-    </div>
-    <div class="artistBtnContainer"></div>
-    <script src="./home.js"></script>
+  </div>
+  <div class="ticketmaster">
+    <h3>Upcoming Artist Events</h3>
+  </div>
+  <div class="artistBtnContainer"></div>
+  <script src="./home.js"></script>
+
 </body>
+<script src="./seach.js"></script>
+
 </html>
