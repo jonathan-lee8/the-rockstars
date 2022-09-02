@@ -9,26 +9,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="./search.css">
+</head>
 
 <body>
-
-  <header>The Artist Locator</header>
- <!-- <input class="input is-rounded is-focused" type="text" placeholder="Search Artist Name..." id="search-bar"> -->
- <button id="back" class="button is-rounded is-responsive is-info">Home</button>
-  <!-- //artist results container// -->
-  <div>
-    <table class="table is bordered" id="results">
-      <thead>
-        <tr>
-          <th>Top Spotify Songs</th>
-          <th>Upcoming Events</th>
-        </tr>
-      </thead>
-      <tbody>
-        <td id="song-result"></td>
-        <td id="concerts"></td>
-      </tbody>
-    </table>
+  <header>
+    The Artist Locator
+  </header>
+  <!-- //search columnn//  -->
+  <!-- <div class="columns">
+    <div class="column is-one-quarter">
+      <div class="field has-addons"> -->
+        <!-- <input class="input is-rounded is-focused" type="text" placeholder="Search Artist Name..." id="search-bar"> -->
+        <button id="back" class="button is-rounded is-responsive is-info">Home</button>
+        <!-- </input> -->
+      <!-- </div> -->
+      <!-- //artist results container// -->
+  <!-- <div id="table-results" class="columns"> -->
+    <div class="container">
+      <table class="table is-12">
+        <thead>
+          <tr>
+            <th><abbr title="Top Songs">Top Spotify Songs</abbr></th>
+            <th>Upcoming Events</th>
+          </tr>
+        </thead>
+        <tbody>
+          <th id="song-result"></th>
+          <th id="event-results"></th>
+        </tbody>
+      </table>
+     </div>
+  </div> -->
+  <div class="ticketmaster">
+    <h3>Upcoming Artist Events</h3>
   </div>
    
   <div class="artistBtnContainer"></div>

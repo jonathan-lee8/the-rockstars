@@ -2,7 +2,8 @@ var btnContainer = document.querySelector(".artistBtnContainer");
 // var searchInput = document.querySelector("#search-bar");
 var searchBtn = document.querySelector("#searchbtn");
 var HomeBtn = document.querySelector("#back")
-var results = document.querySelector("#song-result")
+var top10 = document.querySelector("#song-result")
+
 
 function getParams() {
 
@@ -12,12 +13,19 @@ function getParams() {
   var searchInputVal = searchParamsArr[0].split('=').pop();
 console.log(searchInputVal)
   getToken(searchInputVal);
+
+  var ticketMaster = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=aHO1boEvSw5W3eAvMn8m0d8RJpKAsYLH' + '&keyword=' + searchInputVal;
+
+  console.log(ticketMaster);
 }
 
 var getEvents = async function (searchInput) {
   var ticketMaster = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=aHO1boEvSw5W3eAvMn8m0d8RJpKAsYLH' + '&keyword=' + searchInput;
 
+  console.log(ticketMaster);
+
   fetch(ticketMaster)
+
     .then(function (response) {
       if (response.ok) {
         response.json().then(function (data) {
@@ -82,13 +90,17 @@ var trackArr = data.tracks.items
 
 
 trackArr.forEach(function(track) {
-var trackBtn = document.createElement("a")
-trackBtn.textContent = track.name
-trackBtn.setAttribute("href", track.external_urls.spotify )
-results.append(trackBtn)
-console.log(track.name)
-console.log(track.external_urls.spotify)
-console.log(track)
+  var listSongs = document.createElement("ul");
+  var trackBtn = document.createElement("a");
+  listSongs.appendChild(trackBtn);
+  trackBtn.textContent = track.name;
+  trackBtn.setAttribute("href", track.external_urls.spotify);
+
+  top10.append(listSongs)
+  
+  console.log(track.name)
+  console.log(track.external_urls.spotify)
+  console.log(track)
 })
 
 }

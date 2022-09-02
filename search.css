@@ -18,4 +18,8 @@ html {
     color: azure;
     background-color: black;
   }
-  
+
+  .table {
+    width: 100%;
+  }
+
