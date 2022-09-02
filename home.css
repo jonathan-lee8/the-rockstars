@@ -4,7 +4,6 @@ html {
 
 header {
   margin: 25px;
-  padding: 20px;
   text-align: center;
   font-size: 50px;
   font-weight: 700;
@@ -29,7 +28,7 @@ header {
   text-align: center;
 }
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 900px;
   position: relative;
   margin: auto;
 }
@@ -90,4 +89,16 @@ header {
 
 #search-bar {
   margin-bottom: 200px;
+}
+
+#parental,
+#parental2  {
+  max-width: 100px;
+  max-height: 195px;
+}
+
+#image-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 18px;
 }
