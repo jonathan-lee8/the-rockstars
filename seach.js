@@ -54,7 +54,7 @@ getArtist(data.access_token, input)
 };
 const getArtist = async (token, searchInput) => {
 // console.log(searchInput.value)
-const result = await fetch(`https://api.spotify.com/v1/search` +`?q=` + searchInput + `&type=track&limit=5`, {
+const result = await fetch(`https://api.spotify.com/v1/search` +`?q=` + searchInput + `&type=track&limit=10`, {
   method: 'GET',
   headers: {'Authorization' : 'Bearer ' + token}
 });
