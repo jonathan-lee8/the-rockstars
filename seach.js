@@ -2,7 +2,7 @@ var btnContainer = document.querySelector(".artistBtnContainer");
 // var searchInput = document.querySelector("#search-bar");
 var searchBtn = document.querySelector("#searchbtn");
 var HomeBtn = document.querySelector("#back")
-var top10 = document.querySelector("#song-results")
+var top10 = document.querySelector("#song-result")
 
 function getParams() {
 
