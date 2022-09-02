@@ -29,3 +29,8 @@ html {
   #artists th{
     color: azure;
   }
+
+
+  .table {
+    width: 100%;
+  }
