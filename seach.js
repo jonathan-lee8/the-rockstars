@@ -2,7 +2,7 @@ var btnContainer = document.querySelector(".artistBtnContainer");
 // var searchInput = document.querySelector("#search-bar");
 var searchBtn = document.querySelector("#searchbtn");
 var HomeBtn = document.querySelector("#back")
-var results = document.querySelector("#1")
+var top10 = document.querySelector("#song-results")
 
 function getParams() {
 
@@ -75,13 +75,17 @@ var trackArr = data.tracks.items
 
 
 trackArr.forEach(function(track) {
-var trackBtn = document.createElement("a")
-trackBtn.textContent = track.name
-trackBtn.setAttribute("href", track.external_urls.spotify )
-results.append(trackBtn)
-console.log(track.name)
-console.log(track.external_urls.spotify)
-console.log(track)
+  var listSongs = document.createElement("ul");
+  var trackBtn = document.createElement("a");
+  listSongs.appendChild(trackBtn);
+  trackBtn.textContent = track.name;
+  trackBtn.setAttribute("href", track.external_urls.spotify);
+
+  top10.append(listSongs)
+  
+  console.log(track.name)
+  console.log(track.external_urls.spotify)
+  console.log(track)
 })
 
 }

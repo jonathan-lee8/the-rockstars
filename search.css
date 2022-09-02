@@ -19,9 +19,13 @@ html {
     background-color: black;
   }
 
-  .table{
+  #artists{
     text-align: center;
     background-color: black;
     color: azure;
     width: 50%;
+  }
+
+  #artists th{
+    color: azure;
   }
