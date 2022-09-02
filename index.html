@@ -11,18 +11,22 @@
 </head>
 
 <body>
+    <div id="image-flex">
+      <img id="parental" src="./images/1200px-Parental_Advisory_label.svg.png" alt="Parental Advisory Label">
+      <img id="parental2" src="./images/1200px-Parental_Advisory_label.svg.png" alt="Parental Advisory Label">
+    </div>
   <header>The Artist Locator</header>
-  <div class="columns">
+  <!-- <div class="columns">
     <div id="nav-bar" class="column">
       <ul class="column">
         <li>
-          <!-- <a href="#">Home</a> -->
+          <a href="#">Home</a>
           <a href="https://open.spotify.com/" target="_blank">Spotify</a>
           <a href="https://www.ticketmaster.com/" target="_blank">Ticket Master</a>
         </li>
       </ul>
-    </div>
-  </div>
+    </div> 
+  </div> -->
   <div class="columns">
     <div id="pic-carousel" class="column">
             <!-- Slideshow container -->
@@ -33,6 +37,10 @@
 
         <div class="mySlides fade">
           <img src="./images/Illustrated-album-covers.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/kend.jpg" style="width:100%">
         </div>
 
         <div class="mySlides fade">
@@ -51,6 +59,10 @@
           <img src="./images/The_1975.png" style="width:100%">
         </div>
 
+        <div class="mySlides fade">
+          <img src="./images/frank.jpg" style="width:100%">
+        </div>
+
       <!-- The dots/circles -->
           <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
@@ -63,16 +75,21 @@
   </div>
 
   <div class="columns">
-    <div id="search-bar" class="column is-three-fifths is-offset-one-fifth">
+    <div class="column is-three-fifths is-offset-one-fifth">
+      <h1 style="color: white; font-size: 25px;">Search for an Artist:</h1>
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="column is-three-fifths is-offset-one-fifth">
       <div class="field has-addons">
       <input class="input is-rounded is-focused" type="text" placeholder="Search Artist Name..." id="search-bar">
-        <button class="button is-rounded is-responsive is-info">Search</button>
+        <button id = "searchbtn" class="button is-rounded is-responsive is-info">Send it!</button>
       </input>
       </div>
     </div>
   </div>
 </body>
-
 
 <script src="./home.js"></script>
 </html>
