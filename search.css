@@ -23,3 +23,23 @@ html {
     width: 100%;
   }
 
+.title-headers {
+  font-size: 45px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.table th:not([align]) {
+  text-align: center;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+ul a {
+  font-size: 20px;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
