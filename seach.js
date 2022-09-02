@@ -2,7 +2,7 @@ var btnContainer = document.querySelector(".artistBtnContainer");
 // var searchInput = document.querySelector("#search-bar");
 var searchBtn = document.querySelector("#searchbtn");
 var HomeBtn = document.querySelector("#back")
-var results = document.querySelector("#1")
+var results = document.querySelector("#song-result")
 
 function getParams() {
 
@@ -14,7 +14,7 @@ console.log(searchInputVal)
   getToken(searchInputVal);
 }
 
-var getEvents = function (searchInput) {
+var getEvents = async function (searchInput) {
   var ticketMaster = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=aHO1boEvSw5W3eAvMn8m0d8RJpKAsYLH' + '&keyword=' + searchInput;
 
   fetch(ticketMaster)
@@ -30,6 +30,19 @@ var getEvents = function (searchInput) {
     .catch(function (error) {
       alert('Unable to connect to TicketMaster');
     });
+}
+function displayEvents(data, searchInput){
+var eventsArr = data._embedded.events
+console.log(eventsArr)
+
+for(var i=0; i < 5; i++){
+var eventBtn = document.createElement("a")
+eventBtn.textContent = eventsArr[i]._embedded.venues[0].name
+eventBtn.setAttribute("href", eventsArr[i].url )
+results.append(eventBtn)
+console.log(eventsArr[i])
+}
+
 };
 
 function getToken(input) {
@@ -52,6 +65,7 @@ return response.json()
 })
 .then(data=>{
 getArtist(data.access_token, input)
+getEvents(input)
 })
 };
 const getArtist = async (token, searchInput) => {

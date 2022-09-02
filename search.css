@@ -11,17 +11,11 @@ html {
     color: azure;
   }
 
-  #events{
+  #results{
     margin: 30px;
     text-align:center;
     font-weight: 600;
     color: azure;
     background-color: black;
   }
-
-  .table{
-    text-align: center;
-    background-color: black;
-    color: azure;
-    width: 50%;
-  }
+  
