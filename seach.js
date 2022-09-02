@@ -10,12 +10,19 @@ function getParams() {
   var searchInputVal = searchParamsArr[0].split('=').pop();
 console.log(searchInputVal)
   getToken(searchInputVal);
+
+  var ticketMaster = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=aHO1boEvSw5W3eAvMn8m0d8RJpKAsYLH' + '&keyword=' + searchInputVal;
+
+  console.log(ticketMaster);
 }
 
 var getEvents = function (searchInput) {
   var ticketMaster = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=aHO1boEvSw5W3eAvMn8m0d8RJpKAsYLH' + '&keyword=' + searchInput;
 
+  console.log(ticketMaster);
+
   fetch(ticketMaster)
+
     .then(function (response) {
       if (response.ok) {
         response.json().then(function (data) {
