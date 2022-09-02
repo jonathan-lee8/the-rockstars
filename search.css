@@ -11,7 +11,7 @@ html {
     color: azure;
   }
 
-  #events{
+  #results{
     margin: 30px;
     text-align:center;
     font-weight: 600;
@@ -19,18 +19,7 @@ html {
     background-color: black;
   }
 
-  #artists{
-    text-align: center;
-    background-color: black;
-    color: azure;
-    width: 50%;
-  }
-
-  #artists th{
-    color: azure;
-  }
-
-
   .table {
     width: 100%;
   }
+
