@@ -20,38 +20,20 @@ function showSlides() {
 }
 
 
-/*Andre M. TODO: Through Javascript get the button 
-in Homepage to work and take to the results page
-
-var searchFormEl = document.querySelector('#search-bar');
-
+/*Search button, input work, and locate to search.html*/
 function handleSearchFormSubmit(event) {
   event.preventDefault();
 
   var searchInputVal = document.querySelector('#search-bar').value;
- // var formatInputVal = document.querySelector('#format-input').value;
 
   if (!searchInputVal) {
     console.error('You need a search input value!');
     return;
   }
 
-  var queryString = './search-results.html?q=' + searchInputVal; //+ '&format=' + formatInputVal;
-
-  location.assign(queryString);
-}
-
-searchFormEl.addEventListener('submit', handleSearchFormSubmit);
-*/
-=======
-function handleSearchFormSubmit(event) {
-  event.preventDefault();
-//  Code to get values
-searchInputVal = document.querySelector('#search-bar').value;
-  if (!searchInputVal) {
-    console.error('You need a search input value!');
-    return; }
-  var queryString = './search.html?q=' + searchInputVal
+  var queryString = './search.html'
   location.assign(queryString);
 }
 searchBtn.addEventListener('click', handleSearchFormSubmit);
+
+
