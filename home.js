@@ -25,13 +25,15 @@ function handleSearchFormSubmit(event) {
   event.preventDefault();
 
   var searchInputVal = document.querySelector('#search-bar').value;
+  console.log(searchInputVal);
 
   if (!searchInputVal) {
     console.error('You need a search input value!');
     return;
   }
 
-  var queryString = './search.html'
+  // var queryString = './search-results.html?q=' + searchInputVal + '&format=' + formatInputVal;
+  var queryString = './search.html?q=' + searchInputVal
   location.assign(queryString);
 }
 searchBtn.addEventListener('click', handleSearchFormSubmit);
