@@ -8,7 +8,7 @@ User can access our repo by downloading a HTTP or SSH key from the provided link
 
 Github: https://github.com/jonathan-lee8/the-rockstars
 
-Live: https://jonathan-lee8.github.io/the-rockstars
+Live: https://jonathan-lee8.github.io/the-rockstars/
 
 ## Usage
 
